@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>QUIZ MAIN leaderboard_page.html</title>
+	<script type="text/javascript" src="js/jq.js"></script><!-- jquery script -->
+	<link rel="stylesheet" href="css/style-custom.css"><!-- custom style -->
+	
+	<style>
+		#btn-main-menu{
+		position:relative;
+		margin-top:100%
+	}
+		#img, #imag, #im{
+		background-image:url("img/quiz.png");
+		background-size: 100%;
+		}
+</style>
+</head>
+<body>
+	<div class="modal-header" id="im">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	<!--	<h3>Leaderboard Modal</h3> --> 
+	</div>
+	<div class="modal-body" id="img">
+		<center>
+		<!--	<h1>leaderboard_page.html</h1> -->
+			<table id="leaderboardTable" border="1" class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th colspan="4" id="thHs"><center>High Scores</center></th>
+					</tr>
+					<tr class="info">
+						<th>Rank</th>
+						<th>Username</th>
+						<th>Score</th>
+					</tr>
+					
+				</thead>
+			</table>
+			
+			<!--<input class="btn-main-menu" type="button" value="MAIN MENU" />-->
+		</center>
+	</div>
+	<!-- <div class="modal-footer" id="imag">
+		<button type="button" data-dismiss="modal" class="btn">Close</button>
+		<button type="button" class="btn btn-primary">Ok</button>
+	</div> -->
+	
+	<script type="text/javascript" src="js/jq-custom.js"></script><!--custom jq script for for functions and variables-->
+	<script type="text/javascript">
+	
+		getLeaderboard(); //call ajax leaderboard; --leaderboard_page.html
+	
+	</script>
+</body>
+</html>
